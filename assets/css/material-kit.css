@@ -15,6 +15,10 @@
 
 /*     brand Colors              */
 
+.resume-header{
+  color: white;
+}
+
 .scroll-to-top {
   position: fixed;
   right: 15px;
@@ -24,7 +28,8 @@
   height: 50px;
   text-align: center;
   color: white;
-  background: rgba(52, 58, 64, 0.5);
+  background: #A7B8C3;
+  opacity: 0.6;
   line-height: 45px;
 }
 
@@ -33,12 +38,83 @@
 }
 
 .scroll-to-top:hover {
-  background: rgba(0, 188, 212, 0.6);
+  background: #227AAB;
+  opacity: 0.6;
   color: black;
 }
 
 .scroll-to-top i {
   font-weight: 800;
+}
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color: #C9B590;
+    color: white;
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
 }
 
 .carousel.carousel-full-nagivation .left {
@@ -2904,14 +2980,14 @@ fieldset:disabled a.btn {
 
 .btn-danger {
   color: #ffffff;
-  background-color: #f44336;
-  border-color: #f44336;
+  background-color: #f5bb61;
+  border-color: #f5bb61;
   box-shadow: none;
 }
 
 .btn-danger:hover {
   color: #ffffff;
-  background-color: #f22112;
+  background-color: #f6647e;
   border-color: #ea1c0d;
 }
 
@@ -2923,8 +2999,8 @@ fieldset:disabled a.btn {
 .btn-danger.disabled,
 .btn-danger:disabled {
   color: #ffffff;
-  background-color: #f44336;
-  border-color: #f44336;
+  background-color: #f5bb61;
+  border-color: #f5bb61;
 }
 
 .btn-danger:not(:disabled):not(.disabled):active,
@@ -9371,13 +9447,13 @@ button:focus {
 .btn.btn-danger {
   color: #fff;
   background-color: #f44336;
-  border-color: #f44336;
+  border-color: #f5a269;
   box-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12);
 }
 
 .btn.btn-danger:hover {
   color: #fff;
-  background-color: #f33527;
+  background-color: #f44336;
   border-color: #e11b0c;
 }
 
@@ -9385,7 +9461,7 @@ button:focus {
 .btn.btn-danger.focus,
 .btn.btn-danger:hover {
   color: #fff;
-  background-color: #f33527;
+  background-color: #f44336;
   border-color: #e11b0c;
 }
 
@@ -9394,7 +9470,7 @@ button:focus {
 .open>.btn.btn-danger.dropdown-toggle,
 .show>.btn.btn-danger.dropdown-toggle {
   color: #fff;
-  background-color: #f33527;
+  background-color: #f44336;
   border-color: #e11b0c;
   box-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12);
 }
@@ -9412,7 +9488,7 @@ button:focus {
 .show>.btn.btn-danger.dropdown-toggle:focus,
 .show>.btn.btn-danger.dropdown-toggle.focus {
   color: #fff;
-  background-color: #f33527;
+  background-color: #f44336;
   border-color: #a21309;
 }
 
@@ -16445,7 +16521,15 @@ footer .pull-center {
 .card.bg-info,
 .card.card-rotate.bg-info .front,
 .card.card-rotate.bg-info .back {
-  background: linear-gradient(60deg, #26c6da, #0097a7);
+  background: rgb(26,86,83);
+  background: linear-gradient(34deg, rgba(26,86,83,1) 0%, rgba(16,120,105,1) 50%);
+}
+.card .card-header-resume,
+.card.bg-info,
+.card.card-rotate.bg-info .front,
+.card.card-rotate.bg-info .back {
+  background: rgb(26,95,133);
+  background: linear-gradient(34deg, rgba(26,95,133,1) 0%, rgba(34,122,171,1) 50%);
 }
 
 .card .card-header-success,
@@ -16494,6 +16578,9 @@ footer .pull-center {
 
 .card .card-header-info {
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(0, 188, 212, 0.6);
+}
+.card .card-header-resume {
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(0, 0, 0, 0.6);
 }
 
 .card .card-header-success {

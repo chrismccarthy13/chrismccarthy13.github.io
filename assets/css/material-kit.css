@@ -16726,7 +16726,7 @@ footer .pull-center {
 }
 
 .card-login .card-body {
-  padding: 0px 15px 0px 15px;
+  padding: 0px 15px 0px 15px !important;
 }
 
 .card-login .form-check {

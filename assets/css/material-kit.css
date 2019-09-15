@@ -15,6 +15,26 @@
 
 /*     brand Colors              */
 
+@media only screen and (max-width: 991px) {
+  .portfolio-pic {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .work-card {
+    width: 80%;
+  }
+}
+
+.navbar-drop{
+  float: left !important;
+}
+
+.form-control-textarea {
+  height: 7rem !important;
+}
+
 .resume-header{
   color: white;
 }
@@ -2940,7 +2960,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-warning {
-  color: #212529;
+  color: #2E8BC0 !important;
   background-color: #ffeb3b;
   border-color: #ffeb3b;
   box-shadow: none;
@@ -7404,7 +7424,7 @@ button.bg-dark:focus {
 
 .mr-1,
 .mx-1 {
-  margin-right: 0.25rem !important;
+  margin-right: 1.75rem !important;
 }
 
 .mb-1,
@@ -7414,7 +7434,7 @@ button.bg-dark:focus {
 
 .ml-1,
 .mx-1 {
-  margin-left: 0.25rem !important;
+  margin-left: 1.75rem !important;
 }
 
 .m-2 {
@@ -7428,7 +7448,7 @@ button.bg-dark:focus {
 
 .mr-2,
 .mx-2 {
-  margin-right: 0.5rem !important;
+  margin-right: 2rem !important;
 }
 
 .mb-2,
@@ -7438,7 +7458,7 @@ button.bg-dark:focus {
 
 .ml-2,
 .mx-2 {
-  margin-left: 0.5rem !important;
+  margin-left: 2rem !important;
 }
 
 .m-3 {
@@ -12317,11 +12337,11 @@ fieldset[disabled] .is-focused .switch label:focus {
 
 .form-control,
 .is-focused .form-control {
-  background-image: linear-gradient(to top, #9c27b0 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+  background-image: linear-gradient(to top, #227AAB 2px, rgba(34, 122, 171, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 
 .form-control:invalid {
-  background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+  background-image: linear-gradient(to top, #B5DFD6 2px, rgba(34, 122, 171, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 
 .form-control:read-only {
@@ -17674,8 +17694,10 @@ footer .pull-center {
     z-index: 3;
   }
   .navbar-collapse .navbar-nav .nav-item .nav-link {
-    color: #3C4858;
-    margin: 5px 15px;
+    color: #1a5f85;
+  }
+  .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    background-color: #A7B8C3;
   }
   .navbar-collapse .navbar-nav .nav-item.active .nav-link,
   .navbar-collapse .navbar-nav .nav-item.active .nav-link:hover,

@@ -38,33 +38,6 @@
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <ul class="navbar-nav ml-auto sidebar-nav">
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">menu</i>
-            </a>
-            <div class="dropdown-menu dropdown-with-icons">
-              <a class="js-scroll-trigger dropdown-item" href="#page-top">
-                <i class="material-icons">house</i> Home
-              </a>
-              <a class="js-scroll-trigger dropdown-item" href="#about">
-                <i class="material-icons">local_cafe</i> About
-              </a>
-              <a class="js-scroll-trigger dropdown-item" href="#skills">
-                <i class="material-icons">computer</i> Skills
-              </a>
-              <a class="js-scroll-trigger dropdown-item" href="#portfolio">
-              <i class="material-icons">image</i> Portfolio
-              </a>
-              <a class="js-scroll-trigger dropdown-item" href="#resume">
-                <i class="material-icons">list_alt</i> Resume
-              </a>
-              <a class="js-scroll-trigger dropdown-item" href="#contact">
-                <i class="material-icons">mail</i> Contact
-              </a>
-            </div>
-          </li>
-        </ul>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -72,25 +45,50 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class=" collapse navbar-collapse menu-toggle" id="sidebar-wrapper">
-        <ul class="navbar-nav ml-auto sidebar-nav">
+      <div class="row collapse navbar-collapse" id="sidebar-wrapper">
+        <ul class="navbar-nav ml-auto">
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons">menu</i>
+            </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a class="js-scroll-trigger dropdown-item nav-link" href="#page-top">
+                <i class="material-icons">house</i> Home
+              </a>
+              <a class="js-scroll-trigger dropdown-item nav-link" href="#about">
+                <i class="material-icons">local_cafe</i> About
+              </a>
+              <a class="js-scroll-trigger dropdown-item nav-link" href="#skills">
+                <i class="material-icons">computer</i> Skills
+              </a>
+              <a class="js-scroll-trigger dropdown-item nav-link" href="#portfolio">
+              <i class="material-icons">image</i> Portfolio
+              </a>
+              <a class="js-scroll-trigger dropdown-item nav-link" href="#resume">
+                <i class="material-icons">list_alt</i> Resume
+              </a>
+              <a class="js-scroll-trigger dropdown-item nav-link" href="#contact">
+                <i class="material-icons">mail</i> Contact
+              </a>
+            </div>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="window.open('Chris-McCarthy-Resume.pdf')">
+            <a class="nav-link dropdown-item-links" href="javascript:void(0)" onclick="window.open('Chris-McCarthy-Resume.pdf')">
               <i class="material-icons">cloud_download</i> Resume
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" onclick="window.open('https://www.linkedin.com/in/chrism1313/')" data-original-title="Connect on LinkedIn">
+            <a class="nav-link dropdown-item-links" rel="tooltip" title="" data-placement="bottom" onclick="window.open('https://www.linkedin.com/in/chrism1313/')" data-original-title="Connect on LinkedIn">
               <i class="fa fa-linkedin-square"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" onclick="window.open('https://github.com/chrismccarthy13')" data-original-title="Follow on Github">
+            <a class="nav-link dropdown-item-links" rel="tooltip" title="" data-placement="bottom" onclick="window.open('https://github.com/chrismccarthy13')" data-original-title="Follow on Github">
               <i class="fa fa-github"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" onclick="window.open('mailto:chrismcc1313@gmail.com')" data-original-title="Email me">
+            <a class="nav-link dropdown-item-links" rel="tooltip" title="" data-placement="bottom" onclick="location.href=('mailto:chrismcc1313@gmail.com')" data-original-title="Email me">
               <i class="fa fa-envelope"></i>
             </a>
           </li>
@@ -125,7 +123,7 @@
             <div class="row d-flex justify-content-between mt-5">
               <div class="col-lg-4 d-flex align-items-center mx-auto">
                 <p class="lead mb-3">
-                <img class="img-raised rounded img-fluid" src="pic2.jpg" alt="Portfolio picture" />
+                <img class="img-raised rounded img-fluid portfolio-pic" src="pic2.jpg" alt="Portfolio picture" />
                 </p>
               </div>
               <div class="col-lg-7 mb-3">
@@ -155,8 +153,8 @@
                   <h2 class="font-weight-bold">What I Offer</h2>
                 </div>
               </div>
-              <div class="text-center row d-flex justify-content-around mx-4 mt-5">
-                <div class="card card-nav-tabs mb-3 w-25 mx-2" style="width: 20rem;">
+              <div class="row d-flex justify-content-around mt-5">
+                <div class="card card-nav-tabs col-lg-3 col-md-6 mb-5 mb-lg-0 mx-1" style="width: 20rem;">
                   <div class="card-header card-header-info">
                     <i class="material-icons">desktop_mac</i> <br></br> Front-End Development
                   </div>
@@ -169,7 +167,7 @@
                     <li class="list-group-item mx-auto"></li>
                   </ul>
                 </div>
-                <div class="card card-nav-tabs mb-3 w-25 mx-2" style="width: 20rem;">
+                <div class="card card-nav-tabs col-lg-3 col-md-6 mb-5 mb-lg-0 mx-1" style="width: 20rem;">
                   <div class="card-header card-header-info">
                     <i class="material-icons">storage</i> <br></br> Back-End Development
                   </div>
@@ -177,9 +175,10 @@
                     <li class="list-group-item mx-auto">Ruby</li>
                     <li class="list-group-item mx-auto">Rails</li>
                     <li class="list-group-item mx-auto">PostgreSQL</li>
+                    <li class="list-group-item mx-auto"></li>
                   </ul>
                 </div>
-                <div class="card card-nav-tabs mb-3 w-25 mx-2" style="width: 20rem;">
+                <div class="card card-nav-tabs col-lg-3 col-md-6 mb-5 mb-lg-0 mx-1" style="width: 20rem;">
                   <div class="card-header card-header-info">
                     <i class="material-icons">build</i> <br></br>
                       Tools
@@ -188,6 +187,7 @@
                     <li class="list-group-item mx-auto">Git/ Github</li>
                     <li class="list-group-item mx-auto">AWS</li>
                     <li class="list-group-item mx-auto">Bootstrap</li>
+                    <li class="list-group-item mx-auto"></li>
                   </ul>
                 </div>
               </div>
@@ -264,38 +264,38 @@
                     </div>
                   </div>
 
-                  <div class="text-center row d-inline-flex justify-content-around mx-4 mt-5">
-                    <div class="card mb-5 w-25 mx-2">
+                  <div class="text-center row d-flex justify-content-around mt-5 mt-5">
+                    <div class="card mb-5 col-md-3 mb-3 mx-1">
                       <div class="card-body">
                         <h4 class="card-title">Hours Logger | 2019</h4>
                         <h6 class="card-subtitle mb-2 text-muted">Full-Stack Web Developer Intern</h6>
                       </div>
                     </div>
-                    <div class="card mb-5 w-25 mx-2">
+                    <div class="card mb-5 col-md-3 mb-3 mx-1">
                       <div class="card-body">
                         <h4 class="card-title">LEARN Academy | 2019</h4>
                         <h6 class="card-subtitle mb-2 text-muted">Full-Stack Web Developer</h6>
                       </div>
                     </div>
-                    <div class="card mb-5 w-25 mx-2">
+                    <div class="card mb-5 col-md-3 mb-3 mx-1">
                       <div class="card-body">
                         <h4 class="card-title">National University | 2019</h4>
                         <h6 class="card-subtitle mb-2 text-muted">Student Finance Advisor</h6>
                       </div>
                     </div>
-                    <div class="card mb-5 w-25 mx-2">
+                    <div class="card mb-5 col-md-3 mb-3 mx-1">
                       <div class="card-body">
                         <h4 class="card-title">AECOM | 2017</h4>
                         <h6 class="card-subtitle mb-2 text-muted">Aircraft Mechanic</h6>
                       </div>
                     </div>
-                    <div class="card mb-5 w-25 mx-2">
+                    <div class="card mb-5 col-md-3 mb-3 mx-1">
                       <div class="card-body">
                         <h4 class="card-title">IKEA | 2015 - 2017</h4>
                         <h6 class="card-subtitle mb-2 text-muted">Forklift Operator</h6>
                       </div>
                     </div>
-                    <div class="card mb-5 w-25 mx-2">
+                    <div class="card mb-5 col-md-3 mb-3 mx-1">
                       <div class="card-body">
                         <h4 class="card-title">U.S. Navy | 2011 - 2015</h4>
                         <h6 class="card-subtitle mb-2 text-muted">Aviation Machnist Mate</h6>
@@ -318,7 +318,7 @@
             <div class="row">
               <div class="col-lg-4 col-md-6 ml-auto mr-auto">
                 <div class="card card-login">
-                  <form class="form" method="" action="">
+                  <form class="form" action="https://formspree.io/chrismcc1313@gmail.com" method="POST" enctype="text/plain">
                     <div class="card-header card-header-info text-center">
                       <h3 class="card-title">Contact Me</h3>
                       <div class="social-line">
@@ -335,10 +335,10 @@
                       <div class="input-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text">
-                            <i class="material-icons">face</i>
+                            <i class="material-icons">person</i>
                           </span>
                         </div>
-                        <input type="text" class="form-control" placeholder="First Name...">
+                        <input type="text" class="form-control" placeholder="Name" required>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
@@ -346,19 +346,20 @@
                             <i class="material-icons">mail</i>
                           </span>
                         </div>
-                        <input type="email" class="form-control" placeholder="Email...">
+                        <input type="email" class="form-control" placeholder="Email" required>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text">
-                            <i class="material-icons">lock_outline</i>
+                            <i class="material-icons">message</i>
                           </span>
                         </div>
-                        <input type="password" class="form-control" placeholder="Password...">
+                        <textarea type="text" class="form-control form-control-textarea" size="500" placeholder="Message" required></textarea>
                       </div>
                     </div>
                     <div class="footer text-center">
-                      <a href="#pablo" class="btn btn-primary btn-link btn-wd btn-lg">Get Started</a>
+                      <input type="submit" value="Send" class="btn btn-warning btn-link btn-wd btn-lg"></input>
+                      <input type="reset" value="Reset" class="btn btn-warning btn-link btn-wd btn-lg"></input>
                     </div>
                   </form>
                 </div>

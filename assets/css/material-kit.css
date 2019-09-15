@@ -15,9 +15,23 @@
 
 /*     brand Colors              */
 
+.hideme, .hideme1, .hideme2, .hideme3{
+    opacity:0;
+}
+
 @media only screen and (max-width: 991px) {
   .portfolio-pic {
     width: 60%;
+  }
+}
+
+.resume-button {
+  width: 25%;
+}
+
+@media only screen and (max-width: 991px) {
+  .resume-button {
+    width: 50%;
   }
 }
 

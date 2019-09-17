@@ -22,7 +22,7 @@
 
 @-webkit-keyframes focus-in-expand {
   0% {
-    letter-spacing: -0.1em;
+    letter-spacing: -0.1em !important;
     -webkit-filter: blur(12px);
             filter: blur(12px);
     opacity: 0;
@@ -35,7 +35,7 @@
 }
 @keyframes focus-in-expand {
   0% {
-    letter-spacing: -0.1em;
+    letter-spacing: -0.1em !important;
     -webkit-filter: blur(12px);
             filter: blur(12px);
     opacity: 0;
